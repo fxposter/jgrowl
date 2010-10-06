@@ -171,7 +171,8 @@
 			},
 			animateClose: 	{
 				opacity: 	'hide'
-			}
+			},
+                        messageWrapper: function(message) { return message }
 		},
 		
 		notifications: [],
@@ -207,7 +208,7 @@
 				((o.group != undefined && o.group != '') ? ' ' + o.group : '') + '">' +
 				'<div class="jGrowl-close">' + o.closeTemplate + '</div>' +
 				'<div class="jGrowl-header">' + o.header + '</div>' +
-				'<div class="jGrowl-message">' + message + '</div></div>'
+				'<div class="jGrowl-message">' + o.messageWrapper(message) + '</div></div>'
 			).data("jGrowl", o).addClass(o.theme).children('div.jGrowl-close').bind("click.jGrowl", function() {
 				$(this).parent().trigger('jGrowl.close');
 			}).parent();
