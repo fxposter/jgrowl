@@ -1,11 +1,11 @@
 /**
- * jGrowl 1.2.5
+ * jGrowl 1.2.6
  *
  * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
  * and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
  *
  * Written by Stan Lemon <stosh1985@gmail.com>
- * Last updated: 2009.12.15
+ * Last updated: 2010.10.06
  *
  * jGrowl is a jQuery plugin implementing unobtrusive userland notifications.  These 
  * notifications function similarly to the Growl Framework available for
@@ -13,6 +13,9 @@
  *
  * To Do:
  * - Move library settings to containers and allow them to be changed per container
+ *
+ * Changes in 1.2.6
+ * - added messageWrapper callback to options to allow to wrap messages in arbitary HTML
  *
  * Changes in 1.2.5
  * - Changed wrapper jGrowl's options usage to "o" instead of $.jGrowl.defaults
